@@ -1,0 +1,16 @@
+{
+  "name": "1024 守门员",
+  "short_name": "守门员",
+  "description": "把 1024 交易手册写成代码：开单闸门、仓位与杠杆计算、冷静期、交易日志、真相面板。",
+  "start_url": "./#gate",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a0e13",
+  "theme_color": "#0a0e13",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
