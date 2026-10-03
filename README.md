@@ -30,6 +30,26 @@ git push -u origin main
 
 iPhone：Safari 打开上述地址 → 分享 → **添加到主屏幕**。
 
+## 一键推送（本机已装 gh 且已 login）
+
+```bash
+export GH_BIN=/path/to/gh   # 可选
+./scripts/deploy-github.sh 1024-guard
+```
+
+## 运维成本（上线后）
+
+| 项目 | 费用 |
+| --- | --- |
+| **GitHub Pages（公开仓库）** | **0 元/月**。纯静态文件，GitHub 托管，HTTPS 自带。 |
+| **服务器 / 数据库** | **不需要**。没有后端，数据在浏览器 `localStorage`。 |
+| **币安行情** | **0 元**。浏览器直连公开接口，不走你的服务器。 |
+| **GitHub Actions 构建** | 公开仓库额度通常够用；私有仓库有免费分钟数，超出才收费。 |
+| **自定义域名（可选）** | 域名约几十元/年；不用域名则用 `*.github.io` 免费。 |
+| **你的时间** | 改代码后 `git push`，Actions 自动重新部署，**无需日常运维**。 |
+
+国内访问 GitHub Pages 有时慢或被干扰，可开代理访问，或以后换 Cloudflare Pages（同样可免费）。
+
 ## 数据与隐私
 
 - 交易记录、余额、入金记录只存在**本机浏览器** `localStorage`，不上传服务器。
